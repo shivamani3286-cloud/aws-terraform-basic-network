@@ -1,0 +1,14 @@
+aws_region          = "us-east-1"
+project_name        = "basic-terraform-network"
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidr  = "10.0.1.0/24"
+# availability_zone = "us-east-1a"
+
+# IMPORTANT: replace this with your public IP in production, e.g. ["203.0.113.10/32"]
+ssh_cidr_blocks = ["0.0.0.0/0"]
+
+tags = {
+  ManagedBy   = "Terraform"
+  Environment = "dev"
+  Project     = "basic-terraform-network"
+}
