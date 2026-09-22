@@ -103,6 +103,10 @@ Save a screenshot of the successful plan output as:
 screenshots/terraform-plan.png
 ```
 
+<p align="center">
+  <img src="screenshots/terraform-plan.png" alt="Terraform Apply Result" width="100%">
+</p>
+
 The repository intentionally does not contain a fabricated plan screenshot. Generate it from your own Terraform/AWS environment so the evidence is genuine.
 
 ## Apply
@@ -112,6 +116,10 @@ If using an AWS Free Tier account:
 ```bash
 terraform apply
 ```
+
+<p align="center">
+  <img src="screenshots/terraform-apply.png" alt="Terraform Apply Result" width="100%">
+</p>
 
 Review the proposed resources and type `yes` when prompted.
 
@@ -141,17 +149,7 @@ When the environment is no longer needed:
 terraform destroy
 ```
 
-## GitHub and commit history
-
-Use clear, focused commits such as:
-
-```text
-chore: initialize terraform project
-feat: add vpc and public subnet networking
-feat: add public routing and security group
-feat: add variables and outputs
- docs: add architecture and setup instructions
-```
+## GitHub
 
 Example publication workflow:
 
